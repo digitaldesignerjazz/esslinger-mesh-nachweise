@@ -192,6 +192,9 @@ def evidence_files(base=None) -> list:
     b = Path(base) if base else HERE
     out = sorted(str(p.relative_to(b)) for p in (b / "log").glob("*.jsonl"))
     out += sorted(str(p.relative_to(b)) for p in (b / "nachweise").glob("*.json"))
+    # Epochen (Phase 4): Festlegung, Gegenstand, Ereignis-Log, Offenlegung (nie der Seed vor dem Ende)
+    out += sorted(str(p.relative_to(b)) for p in (b / "epochs").glob("epoch-*/*.json"))
+    out += sorted(str(p.relative_to(b)) for p in (b / "epochs").glob("epoch-*/*.jsonl"))
     if (b / PROVE_LOG).exists():
         out.append(PROVE_LOG)
         for r in read_jsonl(b / PROVE_LOG):  # nur Rohdateien, auf die das echte Log verweist

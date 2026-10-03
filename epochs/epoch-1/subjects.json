@@ -1,0 +1,22 @@
+{
+ "v": "esslinger-subjects/1",
+ "epoch_id": 1,
+ "subjects": [
+  {
+   "node_id": "onyx-hannover-01",
+   "peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+   "addr": "/ip6/202:db7e:ec7b:937e:8e9b:44a:4870:ee29/tcp/4710",
+   "machine": "Onyx-PC in Hannover (Variante C, Plan 16.1)",
+   "protocol": "/esslinger/minerproof/1.0.0",
+   "probe_kind": "ping",
+   "graded": true
+  }
+ ],
+ "not_measured": [
+  {
+   "node_id": "onyx-wsl",
+   "peer_id": "12D3KooWKz7ijKoyywYBToCsdgo9R26QurwYpvMVGb77S5Dk6DJC",
+   "reason": "nicht Gegenstand der Epoche (nur IPv4, nicht über Yggdrasil erreichbar)"
+  }
+ ]
+}

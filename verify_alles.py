@@ -75,6 +75,18 @@ def main():
         out["epochs"][nw.stem] = "OK" if ok else "FEHLER"
         if not ok:
             fails.append(f"verify_epoch.py {nw.name}: " + " | ".join(l for l in p.stdout.splitlines() if "FEHLER" in l)[:400])
+    # 5. Epochen (Vorab-Bescheinigung, Ereignis-Log, Offenlegung)
+    if list((HERE / "epochs").glob("epoch-*/epoch-*.json")):
+        p = subprocess.run([sys.executable, str(HERE / "epoche.py"), "verify", "--base", str(HERE)],
+                           capture_output=True, text=True)
+        try:
+            d = json.loads(p.stdout)
+            out["epochs_m1"] = {k: {kk: v.get(kk) for kk in ("ok", "events", "probe_slots_recorded", "outcomes",
+                                                               "revealed", "fails")} for k, v in d["epochs"].items()}
+        except Exception:
+            out["epochs_m1"] = {"ok": False, "stderr": p.stderr[-500:]}
+        if p.returncode != 0:
+            fails.append("epoche.py verify: FEHLGESCHLAGEN " + json.dumps(out["epochs_m1"], ensure_ascii=False)[:400])
     out["ok"] = not fails
     out["failures"] = fails
     print(json.dumps(out, indent=1, ensure_ascii=False))
