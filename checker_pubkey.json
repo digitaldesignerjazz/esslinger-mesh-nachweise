@@ -1,0 +1,12 @@
+{
+ "v": "esslinger-checker/1",
+ "alg": "ed25519",
+ "role": "Prüfer (Box) des Messservers",
+ "pubkey_hex": "26798aecdd25ca5fa0814e3719315c594e3390f57a774486366d31df7d47a85b",
+ "fingerprint_sha256": "9af5b4b4402f822d33857fc11301edde00d16d2981a7f3a91b7ebf3a46dc3823",
+ "key_id": "ck1-9af5b4b4402f822d",
+ "domain": "esslinger-checker-v1\\x00",
+ "signed_message": "domain || bytes.fromhex(record_hash)",
+ "created_at": "2026-10-03T23:02:49.175202Z",
+ "note": "Nur der öffentliche Schlüssel. Der geheime liegt ausschließlich auf der Box (keys/checker.key, 0600) und ist von Wallets, Validator- und Mesh-Schlüsseln getrennt."
+}

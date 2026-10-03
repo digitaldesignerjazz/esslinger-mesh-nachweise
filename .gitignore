@@ -1,0 +1,9 @@
+# Dieses Repo enthält NIE Geheimnisse.
+keys/
+*.key
+mesh.key
+*.pem
+priv_validator*
+node_key.json
+.env
+__pycache__/
