@@ -1,0 +1,30 @@
+{
+  "challenge": {
+    "v": "esslinger-minerproof/1",
+    "kind": "ping",
+    "challenge_id": "20261004T212644-onyx-hannover-01",
+    "nonce": "4ee73b35bfc4b24152e181eb10ea9cbdeb1f32d379523cc6832fd955a8007567",
+    "chain_id": "nexus-qcoin-1",
+    "block_height": 22979,
+    "block_hash": "52C3C9D2FDB0AD5170FD84A98A7847FF622C3D9EE492AE16647FC641C67E49D1",
+    "checker_peer_id": "12D3KooWRkEYuRxUa8QwW3Gm1PTZHpHVc8D9ye95rFcKF6x8rcpN",
+    "subject_peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+    "issued_at": "2026-10-04T19:26:44.497787Z",
+    "deadline_s": 15
+  },
+  "checker_output": {
+    "authenticated_remote_peer_id": null,
+    "challenge_sent_utc": null,
+    "checker": "esslinger-minerproof-checker/0.1",
+    "checker_ephemeral_peer_id": "12D3KooWRkEYuRxUa8QwW3Gm1PTZHpHVc8D9ye95rFcKF6x8rcpN",
+    "error": "dial: Failed to negotiate transport protocol(s): [(/ip6/202:db7e:ec7b:937e:8e9b:44a:4870:ee29/tcp/4710: : Connection refused (os error 111): Connection refused (os error 111))]",
+    "events": [],
+    "expected_peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+    "finished_utc": "2026-10-04T19:26:44.619998028Z",
+    "identify": null,
+    "peer_id_match": false,
+    "response": null,
+    "started_utc": "2026-10-04T19:26:44.505074246Z",
+    "target": "/ip6/202:db7e:ec7b:937e:8e9b:44a:4870:ee29/tcp/4710"
+  }
+}
