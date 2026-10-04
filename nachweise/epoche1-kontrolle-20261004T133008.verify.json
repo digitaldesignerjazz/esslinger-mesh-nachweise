@@ -1,0 +1,73 @@
+{
+ "proof": "/workspace/nexus-chain/messserver/nachweise/epoche1-kontrolle-20261004T133008.json",
+ "log": "/workspace/nexus-chain/messserver/log/epoche1-kontrolle-20261004T133008.jsonl",
+ "ok": true,
+ "failures": [],
+ "failure_count": 0,
+ "notes": [],
+ "records": 96,
+ "merkle_root": "5f831108c2827ccac14b74e66b586193258821d81f052436ea63cb948cc6693c",
+ "status": "PROBELAUF – NICHT GEWERTET",
+ "chains": {
+  "nexus-xcoin-1": {
+   "blocks": 8876,
+   "heights": [
+    8733,
+    17608
+   ],
+   "header_hash_ok": 8876,
+   "signatures_valid": 8876,
+   "gaps_over_60s": 0,
+   "validators": [
+    {
+     "validator": "947B797970D305D7C72EE4D0CB91E340B4602C73",
+     "heights": 8876,
+     "signed_valid": 8876,
+     "sig_ratio": 1.0,
+     "time_coverage": 1.0,
+     "uptime": 1.0
+    }
+   ],
+   "rpc_check": {
+    "heights": 22,
+    "mismatch": 0
+   }
+  },
+  "nexus-qcoin-1": {
+   "blocks": 8910,
+   "heights": [
+    8736,
+    17645
+   ],
+   "header_hash_ok": 8910,
+   "signatures_valid": 8910,
+   "gaps_over_60s": 0,
+   "validators": [
+    {
+     "validator": "51BB918248AD9E18DFDB6E8B7A2B096AD8F4EBE2",
+     "heights": 8910,
+     "signed_valid": 8910,
+     "sig_ratio": 1.0,
+     "time_coverage": 1.0,
+     "uptime": 1.0
+    }
+   ],
+   "rpc_check": {
+    "heights": 22,
+    "mismatch": 0
+   }
+  }
+ },
+ "checker": {
+  "key_id": "ck1-9af5b4b4402f822d",
+  "fingerprint_sha256": "9af5b4b4402f822d33857fc11301edde00d16d2981a7f3a91b7ebf3a46dc3823",
+  "attestations": 3,
+  "attestations_ok": true,
+  "log": {
+   "mode": "jeder Datensatz signiert",
+   "records_signed_valid": 96
+  },
+  "proof": "signiert",
+  "previous_run": "probelauf-20261004T010928"
+ }
+}
