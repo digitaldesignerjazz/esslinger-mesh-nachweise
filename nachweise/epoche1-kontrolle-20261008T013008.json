@@ -1,0 +1,214 @@
+{
+ "v": "esslinger-minerproof/1",
+ "status": "PROBELAUF – NICHT GEWERTET",
+ "counted": false,
+ "reason": "probelauf",
+ "run_id": "epoche1-kontrolle-20261008T013008",
+ "label": "probelauf_nicht_gewertet",
+ "previous_run": {
+  "run_id": "epoche1-kontrolle-20261007T015358",
+  "nachweis_file": "nachweise/epoche1-kontrolle-20261007T015358.json",
+  "nachweis_sha256": "792a3098521db14741278911922311fe6cda3be6f8b03a458f1cd0749bb8f1e1",
+  "log_last_hash": "f6f2baa04aa75c53d6cfa91ff8a981890e415ede5a6fa3d3452438f234a1557d"
+ },
+ "period": {
+  "start": {
+   "nexus-xcoin-1": "2026-10-06T23:53:51.933478917Z",
+   "nexus-qcoin-1": "2026-10-06T23:56:40.512836622Z"
+  },
+  "end_block_times": {
+   "nexus-xcoin-1": "2026-10-07T23:29:54.867118624Z",
+   "nexus-qcoin-1": "2026-10-07T23:34:17.507028439Z"
+  },
+  "heights": {
+   "nexus-xcoin-1": [
+    57645,
+    69695
+   ],
+   "nexus-qcoin-1": [
+    57116,
+    69184
+   ]
+  }
+ },
+ "subject": {
+  "variant": "B-box (Probelauf)",
+  "node_id": "Box-Validatoren",
+  "validator_addresses": [
+   "947B797970D305D7C72EE4D0CB91E340B4602C73",
+   "51BB918248AD9E18DFDB6E8B7A2B096AD8F4EBE2"
+  ],
+  "independent_of_verifier": false,
+  "note": "Prüfer-Eigenwert: Die Box prüft ihre eigenen Validatoren."
+ },
+ "verifier": {
+  "pubkey": "26798aecdd25ca5fa0814e3719315c594e3390f57a774486366d31df7d47a85b",
+  "key_id": "ck1-9af5b4b4402f822d",
+  "fingerprint_sha256": "9af5b4b4402f822d33857fc11301edde00d16d2981a7f3a91b7ebf3a46dc3823",
+  "software_sha256": {
+   "mp_common.py": "0e8fd2e0e63eaf441b49b4c15a2c2c81e35bfbd31ff10f78557e452e5cffdcc0",
+   "collect_validator_uptime.py": "8c9ab3f856d650b6cf66606ebd66aba49f3386d441a6a35165571f8615802566",
+   "verify_epoch.py": "197da934d8009aea052bc29c1639d435466216cd2ba16b4a9db8b0c902cca353",
+   "checker_sig.py": "16b13999fdecc16b4eb6de1c72a730b44b7c28307f37fa596cc178f5f9dc32ff"
+  },
+  "note": "Phase 2: Log-Datensätze und diese Datei sind mit dem Prüferschlüssel signiert."
+ },
+ "measurements": {
+  "validator_uptime": [
+   {
+    "chain_id": "nexus-xcoin-1",
+    "heights": [
+     57645,
+     69695
+    ],
+    "blocks_checked": 12051,
+    "contiguous": true,
+    "last_block_id_link_errors": 0,
+    "header_hash_ok": 12051,
+    "signature_errors": 0,
+    "first_block_time": "2026-10-06T23:53:51.933478917Z",
+    "last_block_time": "2026-10-07T23:29:54.867118624Z",
+    "span_s": 84962.934,
+    "block_interval_s": {
+     "median": 5.007,
+     "max": 19023.904
+    },
+    "gaps_over_60s": 4,
+    "gap_seconds_total": 24388.695,
+    "gaps": [
+     {
+      "after_height": 59833,
+      "seconds": 726.895,
+      "from": "2026-10-07T02:56:27.503124124Z",
+      "to": "2026-10-07T03:08:34.398583476Z"
+     },
+     {
+      "after_height": 63363,
+      "seconds": 373.955,
+      "from": "2026-10-07T08:03:04.166722869Z",
+      "to": "2026-10-07T08:09:18.121850971Z"
+     },
+     {
+      "after_height": 65775,
+      "seconds": 19023.904,
+      "from": "2026-10-07T11:30:35.15764706Z",
+      "to": "2026-10-07T16:47:39.061740261Z"
+     },
+     {
+      "after_height": 69629,
+      "seconds": 4263.941,
+      "from": "2026-10-07T22:13:21.508239396Z",
+      "to": "2026-10-07T23:24:25.449603954Z"
+     }
+    ],
+    "validator_set_hashes": [
+     "4A6A6E1B56C80D4665B34A27FBD4E3823945F2C85D7A6B3E753059DB4DD75360"
+    ],
+    "validators": [
+     {
+      "validator": "947B797970D305D7C72EE4D0CB91E340B4602C73",
+      "heights": 12051,
+      "signed_valid": 12051,
+      "sig_ratio": 1.0,
+      "time_coverage": 0.712949,
+      "uptime": 0.712949
+     }
+    ],
+    "collector_errors": [],
+    "collector_error_count": 0,
+    "collect_seconds": 260.8
+   },
+   {
+    "chain_id": "nexus-qcoin-1",
+    "heights": [
+     57116,
+     69184
+    ],
+    "blocks_checked": 12069,
+    "contiguous": true,
+    "last_block_id_link_errors": 0,
+    "header_hash_ok": 12069,
+    "signature_errors": 0,
+    "first_block_time": "2026-10-06T23:56:40.512836622Z",
+    "last_block_time": "2026-10-07T23:34:17.507028439Z",
+    "span_s": 85056.994,
+    "block_interval_s": {
+     "median": 5.007,
+     "max": 19024.507
+    },
+    "gaps_over_60s": 4,
+    "gap_seconds_total": 24387.11,
+    "gaps": [
+     {
+      "after_height": 59271,
+      "seconds": 724.715,
+      "from": "2026-10-07T02:56:29.668290309Z",
+      "to": "2026-10-07T03:08:34.383510995Z"
+     },
+     {
+      "after_height": 62801,
+      "seconds": 374.062,
+      "from": "2026-10-07T08:03:04.166682083Z",
+      "to": "2026-10-07T08:09:18.228331909Z"
+     },
+     {
+      "after_height": 65213,
+      "seconds": 19024.507,
+      "from": "2026-10-07T11:30:35.912614537Z",
+      "to": "2026-10-07T16:47:40.419410068Z"
+     },
+     {
+      "after_height": 69066,
+      "seconds": 4263.826,
+      "from": "2026-10-07T22:13:21.727030582Z",
+      "to": "2026-10-07T23:24:25.553208892Z"
+     }
+    ],
+    "validator_set_hashes": [
+     "B7B19302A99985A4BFCD01EAA2DB5777145389735E50D1837E42733C8A351236"
+    ],
+    "validators": [
+     {
+      "validator": "51BB918248AD9E18DFDB6E8B7A2B096AD8F4EBE2",
+      "heights": 12069,
+      "signed_valid": 12069,
+      "sig_ratio": 1.0,
+      "time_coverage": 0.713285,
+      "uptime": 0.713285
+     }
+    ],
+    "collector_errors": [],
+    "collector_error_count": 0,
+    "collect_seconds": 262.6
+   }
+  ]
+ },
+ "result": {
+  "counted": false,
+  "reason": "probelauf",
+  "U": null,
+  "R": null,
+  "K": null,
+  "S": null,
+  "L_Q": null
+ },
+ "log": {
+  "file": "log/epoche1-kontrolle-20261008T013008.jsonl",
+  "sha256": "b84372b52727fcb320d1126fdb112875dd0325d6aec7205fea91dbd7aca6f740",
+  "records": 128,
+  "first_hash": "7f84f5811000faaa4b60fd9bbfb28e557b20f405ce4a0f58fc91d006c5f30a29",
+  "last_hash": "52344bbd58cf3aa088a0b6833053f5f53aa163812f11203bf7ae07b7edc47c05",
+  "merkle_root": "226f31cc0a3078b695b02a497b0839b8bc44cc9038ee422fa4eda2da14895192",
+  "merkle_over_records": 127
+ },
+ "anchors": [],
+ "signature": {
+  "over": "sha256(canon(nachweis ohne signature))",
+  "proof_hash": "b85575fe0165b1c27d6a4ab22002a36151bbbf0c2279fbed63b0473c94ac305f",
+  "alg": "ed25519",
+  "key_id": "ck1-9af5b4b4402f822d",
+  "sig": "4c2daaab3047279d5f5fcf5aefe36a78043a4efacb8f5586b1a5a24bca6c39a37bf7acedc1731894e9e00116c48e9328528fe31f1da85f21e05c59998d059d06"
+ },
+ "runtime_s": 523.6,
+ "rpc_requests": 24124
+}
