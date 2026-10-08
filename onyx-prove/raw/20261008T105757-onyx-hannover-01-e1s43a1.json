@@ -1,0 +1,90 @@
+{
+  "challenge": {
+    "v": "esslinger-minerproof/1",
+    "kind": "ping",
+    "challenge_id": "20261008T105757-onyx-hannover-01",
+    "nonce": "bf974dc54aafbeec66746ca98215e1d489ec45c789e90a868d949eab3d33df3a",
+    "chain_id": "nexus-qcoin-1",
+    "block_height": 75806,
+    "block_hash": "1FB5CDEEDFBF12E1160EF1CF6177A42BA0B01E7CA9318D523DE1F24037DEFA61",
+    "checker_peer_id": "12D3KooWQLVWbBFjhBxd2ci2BWFHpQTV9GxsnbpxfQxiSBiiLk2y",
+    "subject_peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+    "issued_at": "2026-10-08T08:57:57.463525Z",
+    "deadline_s": 15
+  },
+  "checker_output": {
+    "authenticated_remote_addr": "/ip6/202:db7e:ec7b:937e:8e9b:44a:4870:ee29/tcp/4710",
+    "authenticated_remote_peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+    "challenge_rtt_ms": 455.93032700000003,
+    "challenge_sent_utc": "2026-10-08T08:57:57.783221203Z",
+    "checker": "esslinger-minerproof-checker/0.1",
+    "checker_ephemeral_peer_id": "12D3KooWQLVWbBFjhBxd2ci2BWFHpQTV9GxsnbpxfQxiSBiiLk2y",
+    "connect_ms": 304.171248,
+    "error": null,
+    "events": [
+      {
+        "ev": "connection_established",
+        "peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+        "t_ms": 306.739488
+      },
+      {
+        "ev": "challenge_sent",
+        "t_ms": 306.739488
+      },
+      {
+        "ev": "response",
+        "peer": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+        "t_ms": 762.9069579999999
+      }
+    ],
+    "expected_peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+    "finished_utc": "2026-10-08T08:57:58.239180738Z",
+    "identify": {
+      "agent_version": "rust-libp2p/0.45.0",
+      "peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+      "protocol_version": "/nexus/nxmesh/0.1.0",
+      "protocols": [
+        "/esslinger/minerproof/1.0.0",
+        "/meshsub/1.0.0",
+        "/ipfs/ping/1.0.0",
+        "/ipfs/id/1.0.0",
+        "/ipfs/id/push/1.0.0",
+        "/meshsub/1.1.0"
+      ],
+      "supports_minerproof": true
+    },
+    "peer_id_match": true,
+    "response": {
+      "ok": {
+        "body": {
+          "agent": "onyx-node/0.2.0-alpha.1+minerproof1",
+          "challenge": {
+            "block_hash": "1FB5CDEEDFBF12E1160EF1CF6177A42BA0B01E7CA9318D523DE1F24037DEFA61",
+            "block_height": 75806,
+            "chain_id": "nexus-qcoin-1",
+            "challenge_id": "20261008T105757-onyx-hannover-01",
+            "checker_peer_id": "12D3KooWQLVWbBFjhBxd2ci2BWFHpQTV9GxsnbpxfQxiSBiiLk2y",
+            "deadline_s": 15,
+            "issued_at": "2026-10-08T08:57:57.463525Z",
+            "kind": "ping",
+            "nonce": "bf974dc54aafbeec66746ca98215e1d489ec45c789e90a868d949eab3d33df3a",
+            "subject_peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+            "v": "esslinger-minerproof/1"
+          },
+          "challenge_hash": "ae5d4b6a9f8e4fdced2ebc9fe83311e2ffa1905a0dc1a4b8d56202ce2d5e946c",
+          "mode": "listen",
+          "node_id": "onyx-hannover-01",
+          "node_time": "2026-10-08T08:57:58.348690386Z",
+          "peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+          "requester_peer_id": "12D3KooWQLVWbBFjhBxd2ci2BWFHpQTV9GxsnbpxfQxiSBiiLk2y",
+          "v": "esslinger-minerproof/1"
+        },
+        "sig": "edfc5a164b5d307b986d7bd2f089541c81553e91c9bfda2609e063fa53259f35982e33262f2cd4364e17f668d25861796607157d87f47cdeba3843235f675003",
+        "sig_alg": "ed25519"
+      }
+    },
+    "response_received_utc": "2026-10-08T08:57:58.239164043Z",
+    "started_utc": "2026-10-08T08:57:57.475881211Z",
+    "target": "/ip6/202:db7e:ec7b:937e:8e9b:44a:4870:ee29/tcp/4710"
+  }
+}
