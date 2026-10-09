@@ -11,7 +11,7 @@ EIN Prozess für GENAU EINE Epoche. Kein Cron, kein systemd-Timer, kein Watchdog
 Keine Transaktion, kein Wallet-, Validator- oder Mesh-Schlüssel, kein laufender Knoten wird angefasst.
 
 Start (einmal):  setsid nohup python3 epoch_runner.py --epoch 1 >> run/epoch-1/runner.out 2>&1 < /dev/null &
-Stop:            touch /workspace/nexus-chain/messserver/STOP     (oder: kill $(cat run/epoch-1/runner.pid))
+Stop:            touch …/messserver/STOP (für Stopp über Neustart hinaus: echo Grund > STOP) (oder: kill $(cat run/epoch-1/runner.pid))
 """
 import argparse, datetime as dt, fcntl, json, os, signal, subprocess, sys, threading, time, urllib.request
 from pathlib import Path
