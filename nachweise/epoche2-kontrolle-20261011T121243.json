@@ -1,0 +1,388 @@
+{
+ "v": "esslinger-minerproof/1",
+ "status": "PROBELAUF – NICHT GEWERTET",
+ "counted": false,
+ "reason": "probelauf",
+ "run_id": "epoche2-kontrolle-20261011T121243",
+ "label": "probelauf_nicht_gewertet",
+ "previous_run": {
+  "run_id": "epoche2-kontrolle-20261011T001213",
+  "nachweis_file": "nachweise/epoche2-kontrolle-20261011T001213.json",
+  "nachweis_sha256": "0850739e93b896b40a8ebe28efb7cb931956ca64c9d6d2ec9e74a4ab7ac9b285",
+  "log_last_hash": "fc3ad8e0188fc9fc0182633c108249cc3e93b279de442ef7712ab7f2c6d25d7d"
+ },
+ "period": {
+  "start": {
+   "nexus-xcoin-1": "2026-10-10T22:12:04.769834814Z",
+   "nexus-qcoin-1": "2026-10-10T22:15:35.390707692Z"
+  },
+  "end_block_times": {
+   "nexus-xcoin-1": "2026-10-11T10:09:56.011382791Z",
+   "nexus-qcoin-1": "2026-10-11T10:13:08.7432196Z"
+  },
+  "heights": {
+   "nexus-xcoin-1": [
+    111243,
+    113045
+   ],
+   "nexus-qcoin-1": [
+    110736,
+    112503
+   ]
+  }
+ },
+ "subject": {
+  "variant": "B-box (Probelauf)",
+  "node_id": "Box-Validatoren",
+  "validator_addresses": [
+   "947B797970D305D7C72EE4D0CB91E340B4602C73",
+   "51BB918248AD9E18DFDB6E8B7A2B096AD8F4EBE2"
+  ],
+  "independent_of_verifier": false,
+  "note": "Prüfer-Eigenwert: Die Box prüft ihre eigenen Validatoren."
+ },
+ "verifier": {
+  "pubkey": "26798aecdd25ca5fa0814e3719315c594e3390f57a774486366d31df7d47a85b",
+  "key_id": "ck1-9af5b4b4402f822d",
+  "fingerprint_sha256": "9af5b4b4402f822d33857fc11301edde00d16d2981a7f3a91b7ebf3a46dc3823",
+  "software_sha256": {
+   "mp_common.py": "0e8fd2e0e63eaf441b49b4c15a2c2c81e35bfbd31ff10f78557e452e5cffdcc0",
+   "collect_validator_uptime.py": "8c9ab3f856d650b6cf66606ebd66aba49f3386d441a6a35165571f8615802566",
+   "verify_epoch.py": "197da934d8009aea052bc29c1639d435466216cd2ba16b4a9db8b0c902cca353",
+   "checker_sig.py": "16b13999fdecc16b4eb6de1c72a730b44b7c28307f37fa596cc178f5f9dc32ff"
+  },
+  "note": "Phase 2: Log-Datensätze und diese Datei sind mit dem Prüferschlüssel signiert."
+ },
+ "measurements": {
+  "validator_uptime": [
+   {
+    "chain_id": "nexus-xcoin-1",
+    "heights": [
+     111243,
+     113045
+    ],
+    "blocks_checked": 1803,
+    "contiguous": true,
+    "last_block_id_link_errors": 0,
+    "header_hash_ok": 1803,
+    "signature_errors": 0,
+    "first_block_time": "2026-10-10T22:12:04.769834814Z",
+    "last_block_time": "2026-10-11T10:09:56.011382791Z",
+    "span_s": 43071.242,
+    "block_interval_s": {
+     "median": 5.014,
+     "max": 7075.941
+    },
+    "gaps_over_60s": 18,
+    "gap_seconds_total": 34124.165,
+    "gaps": [
+     {
+      "after_height": 111761,
+      "seconds": 913.298,
+      "from": "2026-10-10T22:55:21.942177963Z",
+      "to": "2026-10-10T23:10:35.240620755Z"
+     },
+     {
+      "after_height": 111820,
+      "seconds": 6932.56,
+      "from": "2026-10-10T23:15:26.180818488Z",
+      "to": "2026-10-11T01:10:58.741265362Z"
+     },
+     {
+      "after_height": 111881,
+      "seconds": 5214.239,
+      "from": "2026-10-11T01:15:59.621953723Z",
+      "to": "2026-10-11T02:42:53.860777698Z"
+     },
+     {
+      "after_height": 111944,
+      "seconds": 1266.821,
+      "from": "2026-10-11T02:48:04.748095668Z",
+      "to": "2026-10-11T03:09:11.568738801Z"
+     },
+     {
+      "after_height": 112004,
+      "seconds": 3406.383,
+      "from": "2026-10-11T03:14:07.374545742Z",
+      "to": "2026-10-11T04:10:53.758004553Z"
+     },
+     {
+      "after_height": 112062,
+      "seconds": 7075.941,
+      "from": "2026-10-11T04:15:39.665032742Z",
+      "to": "2026-10-11T06:13:35.606194594Z"
+     },
+     {
+      "after_height": 112203,
+      "seconds": 669.5,
+      "from": "2026-10-11T06:25:17.662520586Z",
+      "to": "2026-10-11T06:36:27.162968208Z"
+     },
+     {
+      "after_height": 112262,
+      "seconds": 68.428,
+      "from": "2026-10-11T06:41:18.111965746Z",
+      "to": "2026-10-11T06:42:26.539722695Z"
+     },
+     {
+      "after_height": 112321,
+      "seconds": 1125.009,
+      "from": "2026-10-11T06:47:17.461617513Z",
+      "to": "2026-10-11T07:06:02.470953685Z"
+     },
+     {
+      "after_height": 112505,
+      "seconds": 374.151,
+      "from": "2026-10-11T07:21:20.510481653Z",
+      "to": "2026-10-11T07:27:34.661506966Z"
+     },
+     {
+      "after_height": 112563,
+      "seconds": 356.801,
+      "from": "2026-10-11T07:32:20.52899824Z",
+      "to": "2026-10-11T07:38:17.329902352Z"
+     },
+     {
+      "after_height": 112625,
+      "seconds": 1287.921,
+      "from": "2026-10-11T07:43:23.451103264Z",
+      "to": "2026-10-11T08:04:51.372484953Z"
+     },
+     {
+      "after_height": 112686,
+      "seconds": 477.145,
+      "from": "2026-10-11T08:09:52.197705634Z",
+      "to": "2026-10-11T08:17:49.342368915Z"
+     },
+     {
+      "after_height": 112748,
+      "seconds": 987.0,
+      "from": "2026-10-11T08:22:55.36204162Z",
+      "to": "2026-10-11T08:39:22.361558698Z"
+     },
+     {
+      "after_height": 112809,
+      "seconds": 1209.035,
+      "from": "2026-10-11T08:44:23.155134047Z",
+      "to": "2026-10-11T09:04:32.190158673Z"
+     },
+     {
+      "after_height": 112869,
+      "seconds": 270.758,
+      "from": "2026-10-11T09:09:28.003568545Z",
+      "to": "2026-10-11T09:13:58.761093554Z"
+     },
+     {
+      "after_height": 112929,
+      "seconds": 1098.047,
+      "from": "2026-10-11T09:18:54.72101099Z",
+      "to": "2026-10-11T09:37:12.768079926Z"
+     },
+     {
+      "after_height": 112987,
+      "seconds": 1391.128,
+      "from": "2026-10-11T09:41:58.779554067Z",
+      "to": "2026-10-11T10:05:09.907318539Z"
+     }
+    ],
+    "validator_set_hashes": [
+     "4A6A6E1B56C80D4665B34A27FBD4E3823945F2C85D7A6B3E753059DB4DD75360"
+    ],
+    "validators": [
+     {
+      "validator": "947B797970D305D7C72EE4D0CB91E340B4602C73",
+      "heights": 1803,
+      "signed_valid": 1803,
+      "sig_ratio": 1.0,
+      "time_coverage": 0.207727,
+      "uptime": 0.207727
+     }
+    ],
+    "collector_errors": [],
+    "collector_error_count": 0,
+    "collect_seconds": 37.3
+   },
+   {
+    "chain_id": "nexus-qcoin-1",
+    "heights": [
+     110736,
+     112503
+    ],
+    "blocks_checked": 1768,
+    "contiguous": true,
+    "last_block_id_link_errors": 0,
+    "header_hash_ok": 1768,
+    "signature_errors": 0,
+    "first_block_time": "2026-10-10T22:15:35.390707692Z",
+    "last_block_time": "2026-10-11T10:13:08.7432196Z",
+    "span_s": 43053.353,
+    "block_interval_s": {
+     "median": 5.013,
+     "max": 7075.783
+    },
+    "gaps_over_60s": 19,
+    "gap_seconds_total": 34287.325,
+    "gaps": [
+     {
+      "after_height": 111212,
+      "seconds": 913.447,
+      "from": "2026-10-10T22:55:21.942041818Z",
+      "to": "2026-10-10T23:10:35.389489005Z"
+     },
+     {
+      "after_height": 111271,
+      "seconds": 6932.573,
+      "from": "2026-10-10T23:15:26.180490178Z",
+      "to": "2026-10-11T01:10:58.753156097Z"
+     },
+     {
+      "after_height": 111332,
+      "seconds": 5214.24,
+      "from": "2026-10-11T01:15:59.621663722Z",
+      "to": "2026-10-11T02:42:53.861513108Z"
+     },
+     {
+      "after_height": 111395,
+      "seconds": 1266.848,
+      "from": "2026-10-11T02:48:04.748971947Z",
+      "to": "2026-10-11T03:09:11.597020951Z"
+     },
+     {
+      "after_height": 111455,
+      "seconds": 3406.288,
+      "from": "2026-10-11T03:14:07.495556522Z",
+      "to": "2026-10-11T04:10:53.783635962Z"
+     },
+     {
+      "after_height": 111513,
+      "seconds": 7075.783,
+      "from": "2026-10-11T04:15:39.665057357Z",
+      "to": "2026-10-11T06:13:35.448285591Z"
+     },
+     {
+      "after_height": 111654,
+      "seconds": 669.838,
+      "from": "2026-10-11T06:25:17.252641992Z",
+      "to": "2026-10-11T06:36:27.090898793Z"
+     },
+     {
+      "after_height": 111713,
+      "seconds": 68.373,
+      "from": "2026-10-11T06:41:18.112794665Z",
+      "to": "2026-10-11T06:42:26.485977309Z"
+     },
+     {
+      "after_height": 111772,
+      "seconds": 1124.981,
+      "from": "2026-10-11T06:47:17.461615646Z",
+      "to": "2026-10-11T07:06:02.442200571Z"
+     },
+     {
+      "after_height": 111956,
+      "seconds": 374.117,
+      "from": "2026-10-11T07:21:20.510485594Z",
+      "to": "2026-10-11T07:27:34.627633558Z"
+     },
+     {
+      "after_height": 112014,
+      "seconds": 357.04,
+      "from": "2026-10-11T07:32:20.528384451Z",
+      "to": "2026-10-11T07:38:17.568323606Z"
+     },
+     {
+      "after_height": 112076,
+      "seconds": 1287.835,
+      "from": "2026-10-11T07:43:23.429606808Z",
+      "to": "2026-10-11T08:04:51.264432702Z"
+     },
+     {
+      "after_height": 112137,
+      "seconds": 477.43,
+      "from": "2026-10-11T08:09:52.149478906Z",
+      "to": "2026-10-11T08:17:49.57905852Z"
+     },
+     {
+      "after_height": 112199,
+      "seconds": 987.013,
+      "from": "2026-10-11T08:22:55.361398992Z",
+      "to": "2026-10-11T08:39:22.374091007Z"
+     },
+     {
+      "after_height": 112260,
+      "seconds": 1208.974,
+      "from": "2026-10-11T08:44:23.13895679Z",
+      "to": "2026-10-11T09:04:32.112971859Z"
+     },
+     {
+      "after_height": 112320,
+      "seconds": 270.803,
+      "from": "2026-10-11T09:09:28.0029523Z",
+      "to": "2026-10-11T09:13:58.805772187Z"
+     },
+     {
+      "after_height": 112380,
+      "seconds": 1098.147,
+      "from": "2026-10-11T09:18:54.721011216Z",
+      "to": "2026-10-11T09:37:12.86798472Z"
+     },
+     {
+      "after_height": 112438,
+      "seconds": 1391.037,
+      "from": "2026-10-11T09:41:58.77916592Z",
+      "to": "2026-10-11T10:05:09.816350884Z"
+     },
+     {
+      "after_height": 112497,
+      "seconds": 162.558,
+      "from": "2026-10-11T10:10:01.02785359Z",
+      "to": "2026-10-11T10:12:43.586222564Z"
+     }
+    ],
+    "validator_set_hashes": [
+     "B7B19302A99985A4BFCD01EAA2DB5777145389735E50D1837E42733C8A351236"
+    ],
+    "validators": [
+     {
+      "validator": "51BB918248AD9E18DFDB6E8B7A2B096AD8F4EBE2",
+      "heights": 1768,
+      "signed_valid": 1768,
+      "sig_ratio": 1.0,
+      "time_coverage": 0.203608,
+      "uptime": 0.203608
+     }
+    ],
+    "collector_errors": [],
+    "collector_error_count": 0,
+    "collect_seconds": 36.4
+   }
+  ]
+ },
+ "result": {
+  "counted": false,
+  "reason": "probelauf",
+  "U": null,
+  "R": null,
+  "K": null,
+  "S": null,
+  "L_Q": null
+ },
+ "log": {
+  "file": "log/epoche2-kontrolle-20261011T121243.jsonl",
+  "sha256": "893261968acfcb82fb5a374977a2bbdf0aba7f694ca83738fa6c0ead203c0129",
+  "records": 25,
+  "first_hash": "e7a72d6ba62d4e1284aac516003ada9b78fc52fdf28e6c91c866d47d36e94903",
+  "last_hash": "9a26bc03187385ff492dd850f05413340a915791a2b439273904efcdb2936ef8",
+  "merkle_root": "d947e7015541d283743c34c52ca5ce54562abeedf3478c60552e91931d2047d4",
+  "merkle_over_records": 24
+ },
+ "anchors": [],
+ "signature": {
+  "over": "sha256(canon(nachweis ohne signature))",
+  "proof_hash": "0a3a60bf8694652a9d38b3dd3dd6cc4fdee64d7e831bbb48072c57f22fb880ce",
+  "alg": "ed25519",
+  "key_id": "ck1-9af5b4b4402f822d",
+  "sig": "9780935a961566db7693aa94942599d27c54484fcc9162be610bead2064c4ed6065baef44c46c95264c049e6f08b06c68d3375f4cc9871b43f2a8a1ac4203201"
+ },
+ "runtime_s": 73.8,
+ "rpc_requests": 3575
+}
