@@ -1,0 +1,30 @@
+{
+  "challenge": {
+    "v": "esslinger-minerproof/1",
+    "kind": "ping",
+    "challenge_id": "20261012T090447-onyx-hannover-01",
+    "nonce": "ba4bbfe0b3feec19baf1280c1aecd83baa2d6608d70f8bec13e3d56c1fab27c0",
+    "chain_id": "nexus-qcoin-1",
+    "block_height": 116631,
+    "block_hash": "768A6A31158FC6B169B82912194684B5B2573ABE7E6A1913021024A1EB0CCF9D",
+    "checker_peer_id": "12D3KooWAyd8SfinoVvUuAjEP9vRQyEUnYbE1e4pdJNk3VUh6JTJ",
+    "subject_peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+    "issued_at": "2026-10-12T07:04:47.889861Z",
+    "deadline_s": 15
+  },
+  "checker_output": {
+    "authenticated_remote_peer_id": null,
+    "challenge_sent_utc": null,
+    "checker": "esslinger-minerproof-checker/0.1",
+    "checker_ephemeral_peer_id": "12D3KooWAyd8SfinoVvUuAjEP9vRQyEUnYbE1e4pdJNk3VUh6JTJ",
+    "error": "dial: Failed to negotiate transport protocol(s): [(/ip6/202:db7e:ec7b:937e:8e9b:44a:4870:ee29/tcp/4710: : Timeout has been reached)]",
+    "events": [],
+    "expected_peer_id": "12D3KooWCTqU9empQ6MayAMAgiPt9pdMb36Pv1pnqE8BduuJTwdC",
+    "finished_utc": "2026-10-12T07:04:57.902355878Z",
+    "identify": null,
+    "peer_id_match": false,
+    "response": null,
+    "started_utc": "2026-10-12T07:04:47.901456365Z",
+    "target": "/ip6/202:db7e:ec7b:937e:8e9b:44a:4870:ee29/tcp/4710"
+  }
+}
