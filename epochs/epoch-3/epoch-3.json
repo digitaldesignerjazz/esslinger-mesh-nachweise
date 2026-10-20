@@ -1,0 +1,79 @@
+{
+ "v": "esslinger-epoch/1",
+ "epoch_id": 3,
+ "label": "epoche_3_gewertet",
+ "released": {
+  "by": "Sven Normen Eßlinger",
+  "at": "2026-10-19T12:10:00+02:00",
+  "decision": "Epoche freigegeben: 7 Tage, Auswertung von Hand, Schwelle 90 % Uptime; automatisch prüfen, höchstens 12 am Tag, Start sofort (selbst endender Prozess, M1)."
+ },
+ "start_unix": 1792404746,
+ "end_unix": 1793009546,
+ "start_utc": "2026-10-19T10:12:26Z",
+ "end_utc": "2026-10-26T10:12:26Z",
+ "start_mesz": "19.10.2026 12:12:26 MESZ",
+ "end_mesz": "26.10.2026 12:12:26 MESZ",
+ "duration_s": 604800,
+ "subjects_file": "subjects.json",
+ "subjects_sha256": "8c3591589c13a067d8698452bfd86e4823bab42ae7b6018e05741e27121af5f3",
+ "grading": {
+  "scope": "NUR Erreichbarkeit/Uptime (Liveness) von onyx-hannover-01 über signierte ping-Prüfaufgaben.",
+  "not_included": "Rechen- und Kapazitätsproben (R, K, Phase 3) sind NICHT Teil dieser Epoche: R = K = null.",
+  "U_formula": "U = pass / (geplante Proben − verifier_outage)",
+  "threshold_U": 0.9,
+  "min_planned_probes": 42,
+  "max_verifier_outage_share": 0.1,
+  "outcomes": {
+   "pass": "gültige, an Nonce+Blockhash gebundene Antwort innerhalb der Frist (1. oder 2. Versuch)",
+   "fail": "keine/falsche/zu späte Antwort, auch Onyx offline – zählt gegen den Knoten",
+   "verifier_outage": "Störung auf Prüferseite (Box-Kontrolle fehlgeschlagen, Prozess lief nicht oder > late_tolerance zu spät)"
+  },
+  "evaluation": "von Hand am Epochenende (Sven); der Prozess wertet nicht selbst aus",
+  "publication": "nichts veröffentlicht – nur interne Schattenrechnung (Entwurf v8, 4a)",
+  "control_quantity": "Validator-Uptime der Box-Chains (Prüfer-Eigenwert, bleibt als probelauf_nicht_gewertet gekennzeichnet) dient nur als Kontrollgröße"
+ },
+ "probe_policy": {
+  "kind": "ping",
+  "deadline_s": 15,
+  "probes_per_day": 10,
+  "max_network_probes_per_day": 12,
+  "retry": "höchstens 1 Wiederholung, 60 s nach dem 1. Versuch (innerhalb 2 min), nur solange die Tagesobergrenze von 12 Netzproben nicht erreicht ist",
+  "late_tolerance_s": 900,
+  "control": "vor jeder Probe: beide Box-Chains per RPC erreichbar, letzter Block ≤ 60 s alt, Yggdrasil-Adresse der Box vorhanden; schlägt das fehl UND die Probe besteht nicht, gilt verifier_outage"
+ },
+ "schedule": {
+  "format": "esslinger-epoch-schedule/1",
+  "params": {
+   "days": 7,
+   "day_s": 86400,
+   "per_day": 10,
+   "lo_s": 600,
+   "hi_s": 86100,
+   "min_gap_s": 1800
+  },
+  "n_probes": 70,
+  "seed_commitment": "98b31753063ce70ab34b94b471b2b15684fbceecfab1df790ef75f32ae54aaa2",
+  "schedule_commitment": "a6fc523d1e4eea0fe7c59891cf199a450a85ff0c414b33c7ca65cf8e4200bf52",
+  "seed_storage": "keys/epoch-3.seed (Box, 0600, nie in Git) bis zur Offenlegung",
+  "reveal": "am Epochenende: epochs/epoch-3/reveal.json (Seed + Plan) + Bescheinigung epoch_reveal",
+  "algorithm": "siehe epoche.py (Kopfkommentar)"
+ },
+ "maintenance": {
+  "uptime_collector_every_s": 43200,
+  "anchor_push_every_s": 43200,
+  "note": "Uptime-Sammler (--continue) und Verankerung+Push alle 12 h, zusätzlich Vorab- und Schluss-Anker"
+ },
+ "process": {
+  "runner": "epoch_runner.py",
+  "form": "M1: ein Hintergrundprozess (setsid/nohup), kein Cron, kein systemd, kein Watchdog, kein Neustart",
+  "pid_file": "run/epoch-3/runner.pid",
+  "log": "run/epoch-3/runner.log",
+  "stop_file": "STOP (messserver/STOP)",
+  "hard_exit": "spätestens end_unix + 2 h beendet sich der Prozess hart"
+ },
+ "checker": {
+  "key_id": "ck1-9af5b4b4402f822d",
+  "fingerprint_sha256": "9af5b4b4402f822d33857fc11301edde00d16d2981a7f3a91b7ebf3a46dc3823"
+ },
+ "anchor_repo": "github.com/digitaldesignerjazz/esslinger-mesh-nachweise (privat)"
+}
